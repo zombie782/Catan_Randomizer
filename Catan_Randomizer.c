@@ -25,7 +25,7 @@ void swap_char(char *p,char *q){
 }
 void random_pieces(int *p){
 	int *q=p;
-	while(*q!=-1){
+	while(*q!=PIECE_END){
 		int pos=rand()%PIECES;
 		swap_int(q,p+pos);
 		++q;
